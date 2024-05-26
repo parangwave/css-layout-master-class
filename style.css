@@ -11,17 +11,23 @@ body {
   height: 100vh;
   display: flex;
   /* ⭐ default, 수평적 */
-  flex-direction: row; 
+  /* flex-direction: row;  */
 
   /* 수직적 */
-  /* flex-direction: column;  */
+  flex-direction: column;
 
-  /* mv items on main-axis */
+  /* justify-content -> mv items on main-axis */
+  /* justify-content: flex-start; */
+  /* flex-start: main-axis의 시작  */
+
+  /* justify-content: flex-end; */
+  /* flex-end: main-axis의 시작  */
+
   justify-content: space-around;
   
-  /* mv items on cross-axis */
+  /* align-items -> mv items on cross-axis */
   /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
-  align-items: center;
+  align-items: flex-start;
 
   gap: 10;
 }
