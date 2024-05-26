@@ -2,6 +2,34 @@ body {
   background-color: seashell;
 }
 
-h1 {
-  color:royalblue;
+.box {
+  /* width, height = block을 위한 property */
+  /* <-> inline은 지원하지 않음 */
+  width: 200px;
+  height: 200px;
+
+  background-color: tomato;
+  /* display: block;  */ /* default, 한 줄에 한 요소 */
+  
+  /* width, height 허용 && inline */
+  display: inline-block;
+  text-align: right;
+}
+
+/* 모바일 반응형 */
+/* 1. media-query */
+/* 2. float */
+
+.box:first-child {
+  /* display: block; */
+  float: left;
+}
+
+.box:last-child {
+  float: right;
+}
+
+.box:nth-child(2) {
+  margin: 0 30%;
+  text-align: right;
 }
