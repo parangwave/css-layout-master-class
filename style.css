@@ -14,22 +14,27 @@ body {
   /* flex-direction: row;  */
 
   /* 수직적 */
-  flex-direction: column;
+  /* flex-direction: column; */
+
+  /* main-axis: t수평, R->L */
+  flex-direction: row-reverse;
+  
+  /* main-axis: 수직, B->T */
+  flex-direction: column-reverse;
 
   /* justify-content -> mv items on main-axis */
   /* justify-content: flex-start; */
   /* flex-start: main-axis의 시작  */
 
   /* justify-content: flex-end; */
-  /* flex-end: main-axis의 시작  */
-
-  justify-content: space-around;
+  /* flex-end: main-axis의 끝  */
+  justify-content: flex-end;
   
   /* align-items -> mv items on cross-axis */
   /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
-  align-items: flex-start;
+  /* align-items: flex-start; */
 
-  gap: 10;
+  gap: 10px;
 }
 
 .box {
