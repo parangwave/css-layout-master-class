@@ -8,9 +8,21 @@ body {
 }
 
 .parent {
+  height: 100vh;
   display: flex;
-  /* flex-direction: row; */ /* ⭐ default, 수평적 */
-  flex-direction: column; /* 수직적 */
+  /* ⭐ default, 수평적 */
+  flex-direction: row; 
+
+  /* 수직적 */
+  /* flex-direction: column;  */
+
+  /* mv items on main-axis */
+  justify-content: space-around;
+  
+  /* mv items on cross-axis */
+  /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
+  align-items: center;
+
   gap: 10;
 }
 
@@ -20,4 +32,8 @@ body {
   width: 200px;
   height: 200px;
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
