@@ -1,5 +1,8 @@
 body {
   background-color: seashell;
+  /* container, parent element에게 flex */
+  display: flex;
+  justify-content: space-between;
 }
 
 .box {
@@ -12,24 +15,13 @@ body {
   /* display: block;  */ /* default, 한 줄에 한 요소 */
   
   /* width, height 허용 && inline */
-  display: inline-block;
-  text-align: right;
+  /* display: inline-block; */
+
+  /* text-align: right; */
+
 }
 
 /* 모바일 반응형 */
 /* 1. media-query */
-/* 2. float */
-
-.box:first-child {
-  /* display: block; */
-  float: left;
-}
-
-.box:last-child {
-  float: right;
-}
-
-.box:nth-child(2) {
-  margin: 0 30%;
-  text-align: right;
-}
+/* 2. float; imperative programming */
+/* 3. flexbox;  declaritive programming) */
