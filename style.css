@@ -1,8 +1,17 @@
 body {
   background-color: seashell;
-  /* container, parent element에게 flex */
+  /* container, parent element에게 flex, not child element */
+  /* display: flex; */
+
+  /* box 사이에 여백 */
+  /* justify-content: space-between; */
+}
+
+.parent {
   display: flex;
-  justify-content: space-between;
+  /* flex-direction: row; */ /* ⭐ default, 수평적 */
+  flex-direction: column; /* 수직적 */
+  gap: 10;
 }
 
 .box {
@@ -10,18 +19,5 @@ body {
   /* <-> inline은 지원하지 않음 */
   width: 200px;
   height: 200px;
-
   background-color: tomato;
-  /* display: block;  */ /* default, 한 줄에 한 요소 */
-  
-  /* width, height 허용 && inline */
-  /* display: inline-block; */
-
-  /* text-align: right; */
-
 }
-
-/* 모바일 반응형 */
-/* 1. media-query */
-/* 2. float; imperative programming */
-/* 3. flexbox;  declaritive programming) */
