@@ -61,6 +61,7 @@ body {
   height: 200px;
   /* background-color: tomato; */
   font-size: 36px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,12 +90,24 @@ order: 2;
   align-self: flex-end;
 } */
 
+/* flex-grow: enlarge child element ratio */
+/* flex-shrink: shrink child element ratio */
 .box:first-child {
   background-color: tomato;
   flex-grow: 1;
+  /* flex-shrink: 3; */
+  flex-shrink: 0;
+}
+
+.box:nth-child(2) {
+  background-color: orange;
+  flex-grow: 2;
+  flex-shrink: 0;
 }
 
 .box:last-child {
   background-color: teal;
-  flex-grow: 2;
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+  flex-shrink: 0;
 }
