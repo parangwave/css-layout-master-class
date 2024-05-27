@@ -17,10 +17,10 @@ body {
   /* flex-direction: column; */
 
   /* main-axis: t수평, R->L */
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   
   /* main-axis: 수직, B->T */
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
 
   /* justify-content -> mv items on main-axis */
   /* justify-content: flex-start; */
@@ -33,6 +33,12 @@ body {
   /* align-items -> mv items on cross-axis */
   /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
   /* align-items: flex-start; */
+
+  /* flex-wrap: nowrap; */ /* default */
+  
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  flex-flow: column wrap;
 
   gap: 10px;
 }
