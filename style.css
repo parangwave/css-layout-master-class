@@ -1,3 +1,9 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: seashell;
   /* container, parent element에게 flex, not child element */
@@ -41,20 +47,20 @@ body {
   /* flex-flow: column wrap; */
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
   /* align-content: center; */ /* w/ flex-wrap */
 
   /* row-gap: 10px; */
   /* column-gap: 20px; */
-  gap: 10px 20px; /* w/ flex-wrap */
+  /* gap: 10px 20px; */ /* w/ flex-wrap */
 }
 
 .box {
   /* width, height = block을 위한 property */
   /* <-> inline은 지원하지 않음 */
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
-  background-color: tomato;
+  /* background-color: tomato; */
+  font-size: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,10 +81,20 @@ order: 2;
 
 /* align-self: cross-axis에서 하나만 정렬 */
 /* align-content랑 같이 못 씀 */
-.box:first-child {
+/* .box:first-child {
   align-self: flex-start;
 }
 
 .box:last-child {
   align-self: flex-end;
+} */
+
+.box:first-child {
+  background-color: tomato;
+  flex-grow: 1;
+}
+
+.box:last-child {
+  background-color: teal;
+  flex-grow: 2;
 }
