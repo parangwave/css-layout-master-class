@@ -42,7 +42,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  align-content: center; /* w/ flex-wrap */
+  /* align-content: center; */ /* w/ flex-wrap */
 
   /* row-gap: 10px; */
   /* column-gap: 20px; */
@@ -58,5 +58,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* order: 6; */
 }
 
+
+/* order (default: 0) */
+/* background-color: dodgerblue;
+order: 2;
+}
+
+.box:nth-child(6) {
+  background-color: lightseagreen;
+  order: -1;
+} */
+
+
+/* align-self: cross-axis에서 하나만 정렬 */
+/* align-content랑 같이 못 씀 */
+.box:first-child {
+  align-self: flex-start;
+}
+
+.box:last-child {
+  align-self: flex-end;
+}
