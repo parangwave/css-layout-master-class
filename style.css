@@ -28,19 +28,25 @@ body {
 
   /* justify-content: flex-end; */
   /* flex-end: main-axis의 끝  */
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   
   /* align-items -> mv items on cross-axis */
   /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
   /* align-items: flex-start; */
-
+  
   /* flex-wrap: nowrap; */ /* default */
   
   /* flex-direction: column; */
   /* flex-wrap: wrap; */
-  flex-flow: column wrap;
+  /* flex-flow: column wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; /* w/ flex-wrap */
 
-  gap: 10px;
+  /* row-gap: 10px; */
+  /* column-gap: 20px; */
+  gap: 10px 20px; /* w/ flex-wrap */
 }
 
 .box {
