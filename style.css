@@ -1,113 +1,16 @@
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: seashell;
-  /* container, parent element에게 flex, not child element */
-  /* display: flex; */
-
-  /* box 사이에 여백 */
-  /* justify-content: space-between; */
-}
-
 .parent {
-  height: 100vh;
-  display: flex;
-  /* ⭐ default, 수평적 */
-  /* flex-direction: row;  */
-
-  /* 수직적 */
-  /* flex-direction: column; */
-
-  /* main-axis: t수평, R->L */
-  /* flex-direction: row-reverse; */
-  
-  /* main-axis: 수직, B->T */
-  /* flex-direction: column-reverse; */
-
-  /* justify-content -> mv items on main-axis */
-  /* justify-content: flex-start; */
-  /* flex-start: main-axis의 시작  */
-
-  /* justify-content: flex-end; */
-  /* flex-end: main-axis의 끝  */
-  /* justify-content: flex-end; */
-  
-  /* align-items -> mv items on cross-axis */
-  /* align-items: stretch; */ /* element의 크기가 정해지지 x  */
-  /* align-items: flex-start; */
-  
-  /* flex-wrap: nowrap; */ /* default */
-  
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* flex-flow: column wrap; */
-  flex-flow: column wrap;
-  justify-content: center;
-  /* align-content: center; */ /* w/ flex-wrap */
-
-  /* row-gap: 10px; */
-  /* column-gap: 20px; */
-  /* gap: 10px 20px; */ /* w/ flex-wrap */
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 200px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
 }
 
-.box {
-  /* width, height = block을 위한 property */
-  /* <-> inline은 지원하지 않음 */
-  /* width: 200px; */
-  height: 200px;
-  /* background-color: tomato; */
-  font-size: 36px;
-  color: white;
+.child {
+  background-color: tomato;
   display: flex;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
-  /* order: 6; */
-}
-
-
-/* order (default: 0) */
-/* background-color: dodgerblue;
-order: 2;
-}
-
-.box:nth-child(6) {
-  background-color: lightseagreen;
-  order: -1;
-} */
-
-
-/* align-self: cross-axis에서 하나만 정렬 */
-/* align-content랑 같이 못 씀 */
-/* .box:first-child {
-  align-self: flex-start;
-}
-
-.box:last-child {
-  align-self: flex-end;
-} */
-
-/* flex-grow: enlarge child element ratio */
-/* flex-shrink: shrink child element ratio */
-.box:first-child {
-  background-color: tomato;
-  /* flex-grow: 0;
-  flex-shrink: 5;
-  flex-basis: 500px; */
-  flex: 1 0 500px;
-}
-
-/* .box:nth-child(2) {
-  background-color: orange;
-  flex-grow: 2;
-  flex-shrink: 0;
-} */
-
-.box:last-child {
-  background-color: teal;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
