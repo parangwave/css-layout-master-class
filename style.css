@@ -9,11 +9,11 @@ body {
   display: grid;
   gap: 10px;
   height: 100vh;
-  /* grid-template-columns: 1fr max-content 1fr; */
-  /* grid-template-columns: 1fr min-content 1fr; */
-  /* grid-template-columns: 1fr minmax(250px, 1fr) 1fr; */
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* auto-fill: 지정한 크기의 열을 최대한 많이 만듦(내용물 없어도 상관 X), 남은 공간 남김  */
 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* auto-fit: 필요한 만큼 늘려 채우고 빈 공간도 채움 */
 }
 
 .child {
